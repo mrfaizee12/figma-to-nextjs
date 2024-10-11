@@ -27,9 +27,9 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`fixed lg:hidden bg-black top-0 right-0 w-full h-screen transition-all duration-300 ${
-          show ? "right-0" : "-right-full"
-        } flex gap-10 flex-col justify-center items-center`}
+        className={`fixed lg:hidden bg-gray-800 top-0 right-0 w-full h-screen transition-transform duration-300 ${
+          show ? "translate-x-0" : "translate-x-full"
+        } flex flex-col justify-center items-center`}
       >
         <HiX
           size={30}
@@ -40,7 +40,7 @@ const Navbar = () => {
           <Link
             key={i}
             href={items.url}
-            className={`text-white ${currentPage === items.url ? "active" : ""}`}
+            className={`text-gray-200 hover:text-white text-2xl my-4 ${currentPage === items.url ? "active" : ""}`}
           >
             {items.label}
           </Link>
