@@ -16,12 +16,13 @@ const About = () => {
               width={676} // Adjust width/height according to your design
               height={450}
               className="w-full h-auto"
+              data-aos="flip-up"
             />
           </div>
 
           {/* Right: Text Section */}
-          <div className="text-white">
-            <h2 className="text-4xl font-bold mb-4">About Us</h2>
+          <div className="text-white" data-aos="flip-up">
+            <h2 className="text-4xl font-bold mb-4" >About Us</h2>
             <p className="mb-6">
               There are many variations of passages of Lorem Ipsum available, but the majority have suffered in some form, by injected humour.
             </p>

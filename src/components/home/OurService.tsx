@@ -6,7 +6,7 @@ const OurService = () => {
     <section className='py-16 bg-[#0F0F0F]'>
       <div className="container mx-auto px-4 xl:px-0">
         {/* Section Title */}
-        <div className="text-center mb-12">
+        <div className="text-center mb-12" data-aos="flip-up">
           <h2 className="text-4xl font-bold text-white">Our Awesome Service</h2>
           <p className="text-gray-400">
             There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.
@@ -16,7 +16,7 @@ const OurService = () => {
         {/* Services Grid */}
         <div className="grid lg:grid-cols-3 gap-8">
           {/* Service 1 */}
-          <div className="bg-[#151515] p-6 rounded-lg">
+          <div className="bg-[#151515] p-6 rounded-lg"data-aos="flip-up">
             <Image
               src="/wordpress.png" // Replace with your actual image path
               alt="WordPress Theme"
@@ -30,7 +30,7 @@ const OurService = () => {
           </div>
 
           {/* Service 2 */}
-          <div className="bg-[#151515] p-6 rounded-lg">
+          <div className="bg-[#151515] p-6 rounded-lg" data-aos="flip-up">
             <Image
               src="/react.png" // Replace with your actual image path
               alt="Figma to Next.js"
@@ -44,7 +44,7 @@ const OurService = () => {
           </div>
 
           {/* Service 3 */}
-          <div className="bg-[#151515] p-6 rounded-lg">
+          <div className="bg-[#151515] p-6 rounded-lg" data-aos="flip-up">
             <Image
               src="/html.png" // Replace with your actual image path
               alt="Figma to HTML5"
@@ -58,7 +58,7 @@ const OurService = () => {
           </div>
 
           {/* Service 4 */}
-          <div className="bg-[#151515] p-6 rounded-lg">
+          <div className="bg-[#151515] p-6 rounded-lg" data-aos="flip-up">
             <Image
               src="/laravel.png" // Replace with your actual image path
               alt="Laravel Project"
@@ -72,7 +72,7 @@ const OurService = () => {
           </div>
 
           {/* Service 5 */}
-          <div className="bg-[#151515] p-6 rounded-lg">
+          <div className="bg-[#151515] p-6 rounded-lg" data-aos="flip-up">
             <Image
               src="/customize.png" // Replace with your actual image path
               alt="Customize Website"
@@ -86,7 +86,7 @@ const OurService = () => {
           </div>
 
           {/* Service 6 */}
-          <div className="bg-[#151515] p-6 rounded-lg">
+          <div className="bg-[#151515] p-6 rounded-lg" data-aos="flip-up">
             <Image
               src="/js.png" // Replace with your actual image path
               alt="React JS App"

@@ -1,15 +1,18 @@
-import React from "react";
+"use client"
+import { useParams } from "next/navigation"; // Updated import
 import Image from "next/image";
 
-const About = () => {
+const SingleBlog = () => {
+  const { id } = useParams(); // Get dynamic id from URL
+
   return (
-    <section className="py-16" >
+    <section className="py-16">
       {/* Add the required width and height */}
       <div className="relative w-full" data-aos="flip-up">
         {/* Add border-top to create the red line */}
         <div className="absolute top-0 left-0 w-full h-1 bg-red-500"></div>
         <Image
-          src={"/about/banner.png"}
+          src={"/blog/blog.png"}
           alt="banner"
           width={1509} // Set width based on the image dimensions
           height={512} // Set height based on the image dimensions
@@ -18,7 +21,9 @@ const About = () => {
       </div>
 
       <div className="container mx-auto px-4 2xl:px-0 text-center mt-10" data-aos="flip-up">
-        <h1 className="text-4xl font-bold text-white mb-8">About Us</h1>
+        <h1 className="text-4xl font-bold text-white mb-8">
+          Single Blog {id}
+        </h1>
         <p className="mb-6">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris in
           euismod ipsum, sagittis condimentum ex. Sed aliquam tellus malesuada
@@ -56,4 +61,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default SingleBlog;
