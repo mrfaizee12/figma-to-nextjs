@@ -7,7 +7,7 @@ const Contact = () => {
     <section className="py-16 bg-black text-white border-t-4 pt-10 border-red-500">
       <div className="container mx-auto px-4 flex flex-col lg:flex-row justify-between items-center">
         {/* Image Section */}
-        <div className="relative w-full lg:w-1/2 mb-10 lg:mb-0" data-aos="flip-up">
+        <div className="relative w-full lg:w-1/2 mb-10 lg:mb-0" data-aos="zoom-in" >
           <Image
             src="/contact/contact.png"
             alt="Contact Image"
@@ -18,7 +18,7 @@ const Contact = () => {
         </div>
 
         {/* Contact Form Section */}
-        <div className="w-full lg:w-1/2 bg-gray-900 p-8 rounded-lg shadow-lg" data-aos="flip-up">
+        <div className="w-full lg:w-1/2 bg-gray-900 p-8 rounded-lg shadow-lg" data-aos="zoom-in">
           <h1 className="text-4xl font-bold mb-6">Contact Us</h1>
           <p className="mb-8">Drop me an email, give me a call, or send me a message by submitting the form.</p>
           

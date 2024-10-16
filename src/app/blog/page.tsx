@@ -52,7 +52,7 @@ const Blog = () => {
   return (
     <section className="py-16 bg-black text-white">
       {/* Banner Image with Red Border */}
-      <div className="relative mb-8" data-aos="flip-up">
+      <div className="relative mb-8" data-aos="zoom-in">
         {/* Red Line on Top */}
         <div className="absolute top-0 left-0 w-full h-1 bg-red-500"></div>
 
@@ -66,7 +66,7 @@ const Blog = () => {
         />
       </div>
 
-      <div className="container mx-auto px-4" data-aos="flip-up">
+      <div className="container mx-auto px-4" data-aos="zoom-in">
         {/* Heading */}
         <h1 className="text-4xl font-bold text-center mb-12">BLOG</h1>
 

@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { HiX, HiOutlineMenuAlt3 } from "react-icons/hi";
@@ -9,6 +9,11 @@ import { menu } from "@/data/menu";
 const Navbar = () => {
   const currentPage = usePathname();
   const [show, setShow] = useState(false);
+
+  // Close the mobile menu when the route changes
+  useEffect(() => {
+    setShow(false); // Automatically close the menu when changing routes
+  }, [currentPage]);
 
   return (
     <div className="container mx-auto px-4 xl:px-0 py-4 flex justify-between items-center">
@@ -27,7 +32,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`fixed lg:hidden bg-gray-800 top-0 right-0 w-full h-screen transition-transform duration-300 ${
+        className={`fixed lg:hidden bg-gray-800 top-0 right-0 w-full h-screen transition-transform duration-300 z-50 ${
           show ? "translate-x-0" : "translate-x-full"
         } flex flex-col justify-center items-center`}
       >
@@ -40,7 +45,10 @@ const Navbar = () => {
           <Link
             key={i}
             href={items.url}
-            className={`text-gray-200 hover:text-white text-2xl my-4 ${currentPage === items.url ? "active" : ""}`}
+            className={`text-gray-200 hover:text-white text-2xl my-4 ${
+              currentPage === items.url ? "active" : ""
+            }`}
+            onClick={() => setShow(false)} // Close menu when a link is clicked
           >
             {items.label}
           </Link>

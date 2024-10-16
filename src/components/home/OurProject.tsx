@@ -4,7 +4,7 @@ import Image from 'next/image';
 const OurProject = () => {
   return (
     <section className='py-16 bg-[#080808]'>
-      <div className="container mx-auto px-4 2xl:px-0" data-aos="flip-up">
+      <div className="container mx-auto px-4 2xl:px-0" data-aos="zoom-in">
         {/* Title */}
         <h2 className="text-center text-4xl font-bold text-white">Our Latest Project</h2>
         <p className="text-center max-w-[514px] mx-auto text-gray-400 mt-4">
@@ -12,7 +12,7 @@ const OurProject = () => {
         </p>
 
         {/* Projects Grid */}
-        <div className='grid grid-cols-1 md:grid-cols-12 gap-[21px] mt-[29px]'data-aos="flip-up">
+        <div className='grid grid-cols-1 md:grid-cols-12 gap-[21px] mt-[29px]'data-aos="zoom-in">
           {/* First Project (left, bigger one) */}
           <div className="col-span-5 md:col-span-5" >
             <Image 
@@ -21,7 +21,7 @@ const OurProject = () => {
               width={500} // Adjust as needed
               height={350} // Adjust as needed
               className="rounded-lg"
-              data-aos="flip-up"
+              data-aos="zoom-in"
             />
           </div>
 
@@ -33,7 +33,7 @@ const OurProject = () => {
               width={700} // Adjust as needed
               height={350} // Adjust as needed
               className="rounded-lg"
-              data-aos="flip-up"
+              data-aos="zoom-in"
             />
           </div>
 
@@ -45,7 +45,7 @@ const OurProject = () => {
               width={700} // Adjust as needed
               height={350} // Adjust as needed
               className="rounded-lg"
-              data-aos="flip-up"
+              data-aos="zoom-in"
             />
           </div>
 
@@ -57,7 +57,7 @@ const OurProject = () => {
               width={500} // Adjust as needed
               height={350} // Adjust as needed
               className="rounded-lg"
-              data-aos="flip-up"
+             data-aos="zoom-in"
             />
           </div>
         </div>

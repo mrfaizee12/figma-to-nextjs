@@ -5,7 +5,7 @@ const About = () => {
   return (
     <section className="py-16" >
       {/* Add the required width and height */}
-      <div className="relative w-full" data-aos="flip-up">
+      <div className="relative w-full" data-aos="zoom-in">
         {/* Add border-top to create the red line */}
         <div className="absolute top-0 left-0 w-full h-1 bg-red-500"></div>
         <Image
@@ -17,7 +17,7 @@ const About = () => {
         />
       </div>
 
-      <div className="container mx-auto px-4 2xl:px-0 text-center mt-10" data-aos="flip-up">
+      <div className="container mx-auto px-4 2xl:px-0 text-center mt-10" data-aos="zoom-in">
         <h1 className="text-4xl font-bold text-white mb-8">About Us</h1>
         <p className="mb-6">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris in
